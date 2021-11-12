@@ -77,6 +77,6 @@ jobs:
                    <tr><td> release url </td><td>${{ steps.create_release.outputs.html_url }}</td></tr>
                    </table>
         # comma-separated string, send email to
-        to: ferrywu@arimacomm.com.tw,williamhu@arimacomm.com.tw
+        to: ferrywu@arimacomm.com.tw
         # from email name
         from: github-${{ github.repository_owner }}
