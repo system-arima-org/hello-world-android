@@ -7,8 +7,8 @@ on:
   push:
   pull_request:
   schedule:
-    # run 9:00 UCT time every date, i.e. 17:00 Taipei time
-    - cron:  '0 9 * * *'
+    # run 11:00 UCT time every date, i.e. 19:00 Taipei time
+    - cron:  '0 11 * * *'
 
 jobs:
   build:
@@ -88,6 +88,6 @@ jobs:
                    <tr><td> release url </td><td>${{ steps.create_release.outputs.html_url }}</td></tr>
                    </table>
         # comma-separated string, send email to
-        to: jhchen@arimacomm.com.tw,albertlin@arimacomm.com.tw,ymlu@arimacomm.com.tw,ferrywu@arimacomm.com.tw,ericwang@arimacomm.com.tw,williamhu@arimacomm.com.tw
+        to: ferrywu@arimacomm.com.tw
         # from email name
         from: github-${{ github.repository_owner }}
