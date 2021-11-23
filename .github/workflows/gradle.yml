@@ -7,8 +7,8 @@ on:
   push:
   pull_request:
   schedule:
-    # run 11:00 UCT time every date, i.e. 19:00 Taipei time
-    - cron:  '0 11 * * *'
+    # run 3:00 UCT time every date, i.e. 11:00 Taipei time
+    - cron:  '0 3 * * *'
 
 jobs:
   build:
